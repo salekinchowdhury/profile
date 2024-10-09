@@ -8,11 +8,11 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Your Name / Site Title"
+title                    : "Shirazush Salekin's Homepage"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : &name "Shirazush Salekin Chowdhury"
+description              : &description "I am a second-year Ph.D. student in Electrical Engineering at Virginia Tech with four years of industry experience in Analog Mixed-Signal IC design and AI hardware accelerators. My work at Ulkasemi Pvt. Ltd. involved advanced circuit design and physical verification. I’m skilled in Python, Verilog, and EDA tools, and I am passionate about solving complex engineering challenges and driving innovation in cutting-edge technologies."
+url                      : https://salekinchowdhury.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
 
