@@ -27,13 +27,13 @@ author:
   bio              : "I am a second-year Ph.D. student in Electrical Engineering at Virginia Tech with four years of industry experience in Analog Mixed-Signal IC design and AI hardware accelerators. My work at Ulkasemi Pvt. Ltd. involved advanced circuit design and physical verification. I’m skilled in Python, Verilog, and EDA tools, and I am passionate about solving complex engineering challenges and driving innovation in cutting-edge technologies."
   location         : "Blacksburg, VA, United States"
   employer         : "Virginia Tech"
-  uri              : # URL
+  #uri              : # URL
   email            : "salekin@vt.edu" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : "https://scholar.google.com/citations?user=7XNBptcAAAAJ&hl=en&oi=ao&inst=13410158990364976897"
-  impactstory      : # URL
+  #impactstory      : # URL
   orcid            : "https://orcid.org/0009-0006-0614-2423"
   #semantic         : # URL
   #pubmed           : # URL
