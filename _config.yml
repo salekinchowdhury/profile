@@ -35,8 +35,8 @@ author:
   googlescholar    : "https://scholar.google.com/citations?user=7XNBptcAAAAJ&hl=en&oi=ao&inst=13410158990364976897"
   impactstory      : # URL
   orcid            : "https://orcid.org/0009-0006-0614-2423"
-  semantic         : # URL
-  pubmed           : # URL
+  #semantic         : # URL
+  #pubmed           : # URL
   researchgate     : "https://www.researchgate.net/profile/Shirazush-Salekin-Chowdhury"
 
   # Repositories and software development
