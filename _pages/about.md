@@ -7,6 +7,9 @@ redirect_from:
   - /about/
   - /about.html
 ---
+
+![Salekin's latest successful tapeout in 22nm FDSOI technology](/images/MP225A_150X.png){: .align-right width="300px"}
+
 🎓 I'm a second-year PhD student at Virginia Tech.
 
 ⚡ My research interests include Analog Mixed-Signal Integrated Circuits, Neuromorphic Computing, AI Hardware Accelerators, and In-Memory Computing.
