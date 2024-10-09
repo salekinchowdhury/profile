@@ -12,7 +12,7 @@ title                    : "Shirazush Salekin's Homepage"
 title_separator          : "-"
 name                     : &name "Shirazush Salekin Chowdhury"
 description              : &description ""
-url                      : https://salekinchowdhury.github.io/profile # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://salekinchowdhury.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
 
@@ -25,19 +25,19 @@ author:
   name             : "Shirazush Salekin Chowdhury"
   pronouns         : # example: "he/him"  
   bio              : "I am a second-year Ph.D. student in Electrical Engineering at Virginia Tech with four years of industry experience in Analog Mixed-Signal IC design and AI hardware accelerators. My work at Ulkasemi Pvt. Ltd. involved advanced circuit design and physical verification. I’m skilled in Python, Verilog, and EDA tools, and I am passionate about solving complex engineering challenges and driving innovation in cutting-edge technologies."
-  location         : "Earth"
-  employer         : "Red Brick University"
+  location         : "Blacksburg, VA, United States"
+  employer         : "Virginia Tech"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "salekin@vt.edu" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=7XNBptcAAAAJ&hl=en&oi=ao&inst=13410158990364976897"
   impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : "https://orcid.org/0009-0006-0614-2423"
   semantic         : # URL
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  researchgate     : # URL
+  researchgate     : "https://www.researchgate.net/profile/Shirazush-Salekin-Chowdhury"
 
   # Repositories and software development
   bitbucket        : # Username - Update with your username on the site
