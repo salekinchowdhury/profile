@@ -11,8 +11,8 @@ main:
   - title: "Publications"
     url: https://scholar.google.com/citations?user=7XNBptcAAAAJ&hl=en&oi=ao&inst=13410158990364976897
 
-  - title: "Talks"
-    url: /talks/    
+  - title: "Blogs"
+    url: /blogs/    
 
  
     
@@ -22,8 +22,6 @@ main:
   - title: "Blog Posts"
     url: /year-archive/
     
-  - title: "CV"
-    url: /cv/
     
   - title: "Guide"
     url: /markdown/
