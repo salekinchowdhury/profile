@@ -21,7 +21,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "Salekin_Github_dp.jpg"
+  avatar           : "Salekin_Github_dp.png"
   name             : "Shirazush Salekin Chowdhury"
   pronouns         : # example: "he/him"  
   bio              : "I am a second-year Ph.D. student in Electrical Engineering at Virginia Tech with four years of industry experience in Analog Mixed-Signal IC design and AI hardware accelerators. My work at Ulkasemi Pvt. Ltd. involved advanced circuit design and physical verification. I’m skilled in Python, Verilog, and EDA tools, and I am passionate about solving complex engineering challenges and driving innovation in cutting-edge technologies."
