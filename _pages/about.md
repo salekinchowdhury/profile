@@ -10,8 +10,6 @@ redirect_from:
 
 #[Salekin's latest successful tapeout in 22nm FDSOI technology](/images/MP225A_620px.png){: .align-right width="300px"}
 
-![](/images/MP225A_620px.png){: .align-right width="300px"}
-
 
 🎓 I'm a second-year PhD student at Virginia Tech.
 
