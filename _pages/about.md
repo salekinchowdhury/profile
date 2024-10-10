@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-![](https://github.com/salekinchowdhury/profile/blob/master/images/MP225A_620px.png)
+![raw](https://raw.githubusercontent.com/salekinchowdhury/profile/master/images/MP225A_620px.png)
 
 
 🎓 I'm a second-year PhD student at Virginia Tech.
