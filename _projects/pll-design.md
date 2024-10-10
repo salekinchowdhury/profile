@@ -18,5 +18,3 @@ layout: single
   - TT: 163.4 µW
   - FF: 215.3 µW
 - **Optimization**: Low power and fast settling across PVT variations
-
-### [View Project on GitHub]({{ page.github }})
