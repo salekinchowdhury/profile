@@ -1,7 +1,7 @@
 ---
 title: "PLL Design for Frequency Generation"
 description: "Designed a PLL for frequency generation (200 MHz to 1.6 GHz) with optimized settling times and low power consumption."
-github: "https://github.com/salekinchowdhury/PLL-Design-for-Frequency-Generation"
+github: "https://github.com/salekinchowdhury/PLL-Design-for-Frequency-Generation-Cadence"
 layout: single
 ---
 
