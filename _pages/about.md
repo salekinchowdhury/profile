@@ -9,11 +9,10 @@ redirect_from:
 ---
 
 
-<div style="text-align: center;">
-  <img src="https://raw.githubusercontent.com/salekinchowdhury/profile/master/images/MP225A_620px.png" alt="Successful Tapeout of 22nm AI Chip" style="width: 300px;">
+<div style="float: right; text-align: center; width: 300px;">
+  <img src="https://raw.githubusercontent.com/salekinchowdhury/profile/master/images/MP225A_620px.png" alt="Successful Tapeout of 22nm AI Chip" style="width: 100%;">
   <p><em>Successful Tapeout of 22nm AI Chip</em></p>
 </div>
-
 
 
 🎓 I'm a second-year PhD student at Virginia Tech.
