@@ -8,7 +8,14 @@ redirect_from:
   - /about.html
 ---
 
-![raw](https://raw.githubusercontent.com/salekinchowdhury/profile/master/images/MP225A_620px.png){: .align-right width="300px"}
+![Successful Tapeout of 22nm AI Chip](https://raw.githubusercontent.com/salekinchowdhury/profile/master/images/MP225A_620px.png){: .align-right width="300px"}
+
+
+<div style="text-align: center;">
+  <img src="https://raw.githubusercontent.com/salekinchowdhury/profile/master/images/MP225A_620px.png" alt="Successful Tapeout of 22nm AI Chip" style="width: 300px;">
+  <p><em>Successful Tapeout of 22nm AI Chip</em></p>
+</div>
+
 
 
 🎓 I'm a second-year PhD student at Virginia Tech.
