@@ -7,6 +7,15 @@ author_profile: true
 
 {% include base_path %}
 
-{% for post in site.projects %}
-  {% include archive-single.html %}
-{% endfor %}
+<div class="projects-container">
+  {% for post in site.projects %}
+    <div class="project">
+      <h2>{{ post.title }}</h2>
+      <p>{{ post.description }}</p>
+      <div class="project-details">
+        {{ post.content | markdownify }}  <!-- Render the project content -->
+      </div>
+      <a href="{{ post.github }}" target="_blank">View Project on GitHub</a>
+    </div>
+  {% endfor %}
+</div>
