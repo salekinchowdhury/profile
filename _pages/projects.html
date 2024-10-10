@@ -8,6 +8,7 @@ author_profile: true
 {% include base_path %}
 
 <div class="projects-container">
+  {% assign sorted_projects = site.projects | sort: 'order' %}
   {% for post in site.projects %}
     <div class="project">
       <h2>{{ post.title }}</h2>
