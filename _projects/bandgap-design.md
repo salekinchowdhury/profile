@@ -1,5 +1,5 @@
 ---
-title: "Bandgap Design for Voltage Reference"
+title: "Bandgap Design for Voltage Reference in Cadence"
 description: "Designed a bandgap voltage reference circuit with low temperature coefficient."
 github: "https://github.com/salekinchowdhury/Bandgap-Reference-Circuit-in-Cadence"
 layout: single
