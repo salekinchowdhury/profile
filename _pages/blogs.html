@@ -4,25 +4,26 @@ title: "Blog"
 permalink: /blogs/
 ---
 
-<h2>Hi There! Let's grow together. Cheers!</h2>
+<h4>Hi There! Let's grow together. Cheers!</h4>
 
 <!-- Blog Categories Section -->
 <div class="blog-categories">
-    <h3>Topics</h3>
+    <h3>Categories</h3>
 
-    <!-- VerilogA -->
+    <!-- VerilogA Tutorials -->
     <div class="category">
-        <!-- Wrap the VerilogA Tutorials title in an anchor tag -->
-        <h4><a href="{{ site.url }}/blogs/veriloga/">VerilogA</a></h4>
+        <h4>VerilogA Tutorials</h4>
         <div class="blog-list">
-            {% for post in site.veriloga %}
-                <div class="blog-post">
-                    <h3>
-                        <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-                    </h3>
-                    <p>{{ post.excerpt }}</p>
-                    <a href="{{ site.url }}{{ post.url }}" class="read-more">Read More</a>
-                </div>
+            {% for file in site.static_files %}
+                {% if file.path contains '/blogs/veriloga/' and file.extname == '.html' %}
+                    <div class="blog-post">
+                        <h3>
+                            <a href="{{ site.url }}{{ file.path }}">{{ file.name | replace: ".html", "" }}</a>
+                        </h3>
+                        <p>Click the link to view the tutorial: {{ file.name | replace: ".html", "" }}</p>
+                        <a href="{{ site.url }}{{ file.path }}" class="read-more">Read More</a>
+                    </div>
+                {% endif %}
             {% endfor %}
         </div>
     </div>
