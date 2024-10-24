@@ -13,7 +13,7 @@ permalink: /blogs/veriloga/
         {% for file in verilog_files %}
             {% if file.extname == '.html' and file.name != 'index.html' %}
                 <li>
-                    <a href="/blogs/veriloga/{{ file.name | replace: '.html', '' }}">{{ file.name | replace: '.html', '' }}</a>
+                    <a href="/profile/blogs/veriloga/{{ file.name | replace: '.html', '' }}">{{ file.name | replace: '.html', '' }}</a>
                 </li>
             {% endif %}
         {% endfor %}
