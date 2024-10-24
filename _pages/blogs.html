@@ -10,17 +10,18 @@ permalink: /blogs/
 <div class="blog-categories">
     <h3>Categories</h3>
 
-    <!-- VerilogA Tutorials -->
+    <!-- VerilogA -->
     <div class="category">
-        <h4>VerilogA Tutorials</h4>
+        <!-- Wrap the VerilogA Tutorials title in an anchor tag -->
+        <h4><a href="{{ site.url }}/blogs/veriloga/">VerilogA Tutorials</a></h4>
         <div class="blog-list">
             {% for post in site.veriloga %}
                 <div class="blog-post">
                     <h3>
-                        <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                        <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
                     </h3>
                     <p>{{ post.excerpt }}</p>
-                    <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+                    <a href="{{ site.url }}{{ post.url }}" class="read-more">Read More</a>
                 </div>
             {% endfor %}
         </div>
