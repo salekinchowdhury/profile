@@ -18,10 +18,10 @@ permalink: /blogs/
                 {% if file.path contains '/blogs/veriloga/' and file.extname == '.html' %}
                     <div class="blog-post">
                         <h3>
-                            <a href="{{ site.url }}{{ file.path }}">{{ file.name | replace: ".html", "" }}</a>
+                            <a href="/profile{{ file.path }}">{{ file.name | replace: ".html", "" }}</a>
                         </h3>
                         <p>Click the link to view the tutorial: {{ file.name | replace: ".html", "" }}</p>
-                        <a href="{{ site.url }}{{ file.path }}" class="read-more">Read More</a>
+                        <a href="/profile{{ file.path }}" class="read-more">Read More</a>
                     </div>
                 {% endif %}
             {% endfor %}
