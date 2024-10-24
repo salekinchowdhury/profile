@@ -19,7 +19,7 @@ permalink: /blogs/veriloga/
         {% for file in site.static_files %}
             {% if file.path contains '/blogs/veriloga/' and file.extname == '.html' and file.name != 'index.html' %}
                 <li>
-                    <a href="{{ file.path | prepend: site.baseurl }}">{{ file.name | replace: '.html', '' }}</a>
+                    <a href="{{ file.path | prepend: site.url }}">{{ file.name | replace: '.html', '' }}</a>
                 </li>
             {% endif %}
         {% endfor %}
