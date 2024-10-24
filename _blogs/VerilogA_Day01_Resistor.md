@@ -1,10 +1,9 @@
 ---
-layout: tutorial
-title: "Your Tutorial Title"
-description: "A brief description of the tutorial"
+layout: post
+title: "Understanding Verilog-A"
 date: 2024-10-24
-order: 1
+author: "Your Name"
+excerpt: "An introduction to Verilog-A, its syntax, and key features."
 ---
-tutorial content goes here.
 
-
+Here’s the content of your blog post about Verilog-A
