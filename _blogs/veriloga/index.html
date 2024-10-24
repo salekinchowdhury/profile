@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: archive
 title: "VerilogA Tutorials"
-permalink: /blogs/veriloga/
+permalink: /profile/blogs/veriloga/
 ---
 
 <h2>VerilogA Tutorials</h2>
@@ -9,12 +9,10 @@ permalink: /blogs/veriloga/
 
 <div class="blog-list">
     <ul>
-        {% for file in site.static_files %}
-            {% if file.path contains '/blogs/veriloga/' and file.extname == '.html' %}
-                <li>
-                    <a href="/profile{{ file.path }}">{{ file.name | replace: ".html", "" }}</a>
-                </li>
-            {% endif %}
+        {% for post in site.veriloga %}
+            <li>
+                <a href="{{ post.url }}">{{ post.title | replace: ".html", "" }}</a>
+            </li>
         {% endfor %}
     </ul>
 </div>
