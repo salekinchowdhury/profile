@@ -14,12 +14,14 @@ main:
   - title: "Projects"
     url: /projects/    
 
+ #- title: "Tutorials"
+    #url: /tutorials/
+
     
   #- title: "Portfolio"
   #  url: /portfolio/
         
-  - title: "Tutorials"
-    url: /tutorials/
+ 
     
     
   #- title: "Guide"
