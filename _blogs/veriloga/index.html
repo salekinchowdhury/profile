@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: default
 title: "VerilogA Tutorials"
 permalink: /blogs/veriloga/
 ---
@@ -9,12 +9,10 @@ permalink: /blogs/veriloga/
 
 <div class="blog-list">
     <ul>
-        {% for file in site.static_files %}
-            {% if file.path contains '/blogs/veriloga/' and file.extname == '.html' %}
-                <li>
-                    <a href="/profile{{ file.path }}">{{ file.name | replace: ".html", "" }}</a>
-                </li>
-            {% endif %}
+        {% for item in site.veriloga %}
+            <li>
+                <a href="{{ item.url }}">{{ item.title }}</a>
+            </li>
         {% endfor %}
     </ul>
 </div>
@@ -24,17 +22,14 @@ permalink: /blogs/veriloga/
         list-style-type: none;
         padding: 0;
     }
-
     .blog-list li {
         margin: 10px 0;
     }
-
     .blog-list li a {
         text-decoration: none;
         color: #007BFF;
         font-size: 1.2em;
     }
-
     .blog-list li a:hover {
         text-decoration: underline;
     }
