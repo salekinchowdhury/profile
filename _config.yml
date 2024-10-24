@@ -282,13 +282,7 @@ defaults:
       layout: talk
       author_profile: true
       share: true
-  # _blogs
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
+
 
 # Sass/SCSS
 sass:
