@@ -1,21 +1,20 @@
 ---
 layout: archive
 title: "Blog"
-permalink: /profile/blogs/
+permalink: /blogs/
 ---
 
 <h4>Hi There! Let's grow together. Cheers!</h4>
 <div class="blog-list">
     {% for post in site.blogs reversed %}
         <div class="blog-post">
-            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            <h3><a href="/profile{{ post.url }}">{{ post.title }}</a></h3>
             <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
             <p>{{ post.excerpt }}</p>
-            <a href="{{ post.url }}" class="read-more">Read More</a>
+            <a href="/profile{{ post.url }}" class="read-more">Read More</a>
         </div>
     {% endfor %}
 </div>
-
 
 <style>
     .blog-list {
