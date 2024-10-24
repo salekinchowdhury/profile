@@ -220,9 +220,9 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:path/
-  blogs:
+  VerilogA:
     output: true
-    permalink: /blogs/:path/
+    permalink: /blogs/VerilogA/:path/
   projects:
     output: true
     permalink: /projects/:path/
