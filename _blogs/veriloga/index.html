@@ -1,22 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verilog Resources</title>
-</head>
-<body>
-    <h1>Verilog Files</h1>
+---
+layout: archive
+title: "VerilogA Tutorials"
+permalink: /blogs/veriloga/
+---
+
+<h2>VerilogA Tutorials</h2>
+<p>Below are all the available Verilog-A tutorials:</p>
+
+<div class="blog-list">
     <ul>
-        <!-- Fetch all static files in the _blog/verilog directory except index.html -->
-        {% assign verilog_files = site.static_files | where_exp: "file", "file.path contains '_blog/verilog' and file.basename != 'index'" %}
+        <!-- Loop through static files to find Verilog-A tutorial HTML files in the /blogs/veriloga/ directory -->
+        {% assign veriloga_files = site.static_files | where_exp: "file", "file.path contains '/blogs/veriloga/' and file.extname == '.html' and file.basename != 'index'" %}
         
-        <!-- Loop through the filtered files and create a list of links -->
-        {% for file in verilog_files %}
+        <!-- Create a list item for each HTML file found -->
+        {% for file in veriloga_files %}
             <li>
-                <a href="{{ file.path }}">{{ file.basename | capitalize }}</a>
+                <a href="{{ site.url }}{{ file.path }}">{{ file.basename | replace: ".html", "" | capitalize }}</a>
             </li>
         {% endfor %}
     </ul>
-</body>
-</html>
+</div>
+
+<style>
+    .blog-list ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .blog-list li {
+        margin: 10px 0;
+    }
+
+    .blog-list li a {
+        text-decoration: none;
+        color: #007BFF;
+        font-size: 1.2em;
+    }
+
+    .blog-list li a:hover {
+        text-decoration: underline;
+    }
+</style>
