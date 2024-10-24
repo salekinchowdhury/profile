@@ -9,9 +9,8 @@ permalink: /blogs/veriloga/
 
 <div class="blog-list">
     <ul>
-        {% assign verilog_files = site.static_files | where: "path", "blogs/veriloga/" %}
-        {% for file in verilog_files %}
-            {% if file.extname == '.html' and file.name != 'index.html' %}
+        {% for file in site.static_files %}
+            {% if file.path contains 'blogs/veriloga/' and file.extname == '.html' and file.name != 'index.html' %}
                 <li>
                     <a href="/profile/blogs/veriloga/{{ file.name | replace: '.html', '' }}">{{ file.name | replace: '.html', '' }}</a>
                 </li>
