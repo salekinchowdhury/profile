@@ -223,9 +223,9 @@ collections:
   tutorials:
     output: true
     permalink: /tutorials/:path/
-  projects:
+  blogs:
     output: true
-    permalink: /projects/:path/
+    permalink: /blogs/:path/
 
 # These settings control how pages and collections are included in the site
 defaults:
@@ -282,7 +282,13 @@ defaults:
       layout: talk
       author_profile: true
       share: true
-
+  # _blogs
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
 
 # Sass/SCSS
 sass:
