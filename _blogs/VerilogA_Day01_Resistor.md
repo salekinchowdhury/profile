@@ -1,5 +1,5 @@
 ---
-layout: default  # Or a custom layout like 'post' if you have one
+layout: single
 title: "VerilogA Day 01: Resistor"
 date: 2024-10-24
 author: "Shirazush Salekin Chowdhury"
