@@ -222,7 +222,7 @@ collections:
     permalink: /:collection/:path/
   veriloga:
     output: true
-    permalink: /profile/blogs/veriloga/:path/
+    permalink: /blogs/veriloga/:path/
   projects:
     output: true
     permalink: /projects/:path/
