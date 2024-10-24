@@ -13,7 +13,7 @@ title_separator          : "-"
 name                     : &name "Shirazush Salekin Chowdhury"
 description              : &description "personal description"
 url                      : "https://salekinchowdhury.github.io/profile"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
+baseurl                  : "/profile/" # the subpath of your site, e.g. "/blog"
 repository               : "https://github.com/salekinchowdhury/profile"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
