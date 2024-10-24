@@ -18,8 +18,8 @@ main:
   #- title: "Portfolio"
   #  url: /portfolio/
         
-  #- title: "Tutorials"
-  #  url: /year-archive/
+  - title: "Tutorials"
+    url: /tutorials/
     
     
   #- title: "Guide"
