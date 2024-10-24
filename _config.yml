@@ -220,12 +220,17 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:path/
-  VerilogA:
+  veriloga:
     output: true
     permalink: /blogs/VerilogA/:path/
   projects:
     output: true
     permalink: /projects/:path/
+  blogs:
+    output: true
+    permalink: /blogs/:path/
+
+
 
 # These settings control how pages and collections are included in the site
 defaults:
