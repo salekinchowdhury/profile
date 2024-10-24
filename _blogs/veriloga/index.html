@@ -9,14 +9,12 @@ permalink: /blogs/veriloga/
 
 <div class="blog-list">
     <ul>
-        <!-- Loop through static files to find Verilog-A tutorial HTML files in the /blogs/veriloga/ directory -->
-        {% assign veriloga_files = site.static_files | where_exp: "file", "file.path contains '/blogs/veriloga/' and file.extname == '.html' and file.basename != 'index'" %}
-        
-        <!-- Create a list item for each HTML file found -->
-        {% for file in veriloga_files %}
-            <li>
-                <a href="{{ site.url }}{{ file.path }}">{{ file.basename | replace: ".html", "" | capitalize }}</a>
-            </li>
+        {% for file in site.static_files %}
+            {% if file.path contains '/blogs/veriloga/' and file.extname == '.html' %}
+                <li>
+                    <a href="/profile{{ file.path }}">{{ file.name | replace: ".html", "" }}</a>
+                </li>
+            {% endif %}
         {% endfor %}
     </ul>
 </div>
@@ -41,5 +39,3 @@ permalink: /blogs/veriloga/
         text-decoration: underline;
     }
 </style>
-
-
