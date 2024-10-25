@@ -80,17 +80,19 @@ title: "What is Verilog-A!"
     <p>Ready to dive in? Here’s a simple example to get you started:</p>
   
     <pre><code>
-    `include "discipline.h" // Include the necessary Verilog-A libraries
-    `include "constants.h"  // Includes fundamental constants used in the Verilog-A language
+      
+    `include "discipline.h" // Include Verilog-A libraries
+    `include "constants.h"  // Include fundamental constants
     
-    module simple_resistor (p, n); // Defines a new module named 'simple_resistor' with two electrical nodes: p and n
-        electrical p, n; // Declares 'p' and 'n' as electrical nodes in the circuit
-        parameter real R = 1k; // Declares a parameter 'R' with a default value of 1k ohms (1000 ohms) for the resistor
+    module simple_resistor (p, n); // Module definition for a resistor with nodes p and n
+        electrical p, n; // Declare electrical nodes p and n
+        parameter real R = 1k; // Resistor value set to 1k ohms
     
-        analog begin // Begins the analog block where the behavior of the resistor is defined
-            I(p, n) <+ V(p, n) / R; // Defines the current 'I' flowing from node 'p' to node 'n' using Ohm's Law: I = V/R
+        analog begin // Analog block for behavior definition
+            I(p, n) <+ V(p, n) / R; // Current defined by Ohm's Law: I = V/R
         end
-    endmodule // Ends the definition of the 'simple_resistor' module
+    endmodule // End of simple_resistor module
+
 
     </code></pre>
     <p>In this snippet, we define a simple resistor module. It captures the essence of Ohm’s Law in just a few lines—simple, right?</p>
