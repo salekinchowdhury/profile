@@ -5,14 +5,20 @@ permalink: /blogs/veriloga/
 ---
 
 <h2>VerilogA Tutorials</h2>
-<p>This tutorial is a part of 100 days of Verilog-A series. I will keep updating here. Stay tuned:</p>
+<p>Below are all the available Verilog-A tutorials:</p>
 
 <div class="blog-list">
     <ul>
         <li>
-            <a href="/profile/blogs/veriloga/veriloga_day01_resistor">VerilogA Day 01: Resistor</a>
+            <div class="tutorial-item">
+                <img src="/path/to/your/image/veriloga_day01_resistor.jpg" alt="VerilogA Day 01: Resistor" class="tutorial-image">
+                <div class="tutorial-details">
+                    <a href="/profile/blogs/veriloga/veriloga_day01_resistor">VerilogA Day 01: Resistor</a>
+                    <p>This tutorial covers the basics of modeling a resistor using Verilog-A.</p>
+                </div>
+            </div>
         </li>
-        <!-- Add additional links here as you create more tutorials -->
+        <!-- Add additional tutorials here -->
     </ul>
 </div>
 
@@ -24,12 +30,28 @@ permalink: /blogs/veriloga/
     .blog-list li {
         margin: 10px 0;
     }
-    .blog-list li a {
+    .tutorial-item {
+        display: flex;
+        align-items: center;
+    }
+    .tutorial-image {
+        width: 100px; /* Adjust the size as needed */
+        height: auto; /* Maintain aspect ratio */
+        margin-right: 10px; /* Space between image and text */
+    }
+    .tutorial-details {
+        flex-grow: 1; /* Allow the details to take remaining space */
+    }
+    .tutorial-details a {
         text-decoration: none;
         color: #007BFF;
         font-size: 1.2em;
     }
-    .blog-list li a:hover {
+    .tutorial-details a:hover {
         text-decoration: underline;
+    }
+    .tutorial-details p {
+        margin: 5px 0 0; /* Add some spacing for the description */
+        font-size: 0.9em; /* Smaller font for the description */
     }
 </style>
