@@ -20,7 +20,7 @@ module resistor(p, n);          // Declare a module with two ports 'p' and 'n'
   parameter real R = 1k;        // Declare a parameter 'R' for resistance, default to 1k Ohms
 
   analog begin
-    V(p, n) <+ I(p, n) * R;     // Implement Ohm's law: V = I * R (voltage is proportional to current)
+    V(p, n) <+ I(p, n) * R;     // Implement Ohm's law: V = I * R
   end
 endmodule</code></pre>
             
