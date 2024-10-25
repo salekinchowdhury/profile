@@ -27,16 +27,20 @@ permalink: /blogs/veriloga/
         padding: 0;
     }
     .blog-list li {
-        margin: 10px 0;
+        margin: 20px 0; /* Increase space between list items */
     }
     .tutorial-item {
         display: flex;
         align-items: center;
     }
     .tutorial-image {
-        width: 300px; /* Adjust the size as needed */
+        width: 200px; /* Set initial image size */
         height: auto; /* Maintain aspect ratio */
-        margin-right: 20px; /* Space between image and text */
+        margin-right: 20px; /* Add space between image and text */
+        transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    }
+    .tutorial-image:hover {
+        transform: scale(1.2); /* Enlarge image on hover */
     }
     .tutorial-details {
         flex-grow: 1; /* Allow the details to take remaining space */
@@ -44,13 +48,14 @@ permalink: /blogs/veriloga/
     .tutorial-details a {
         text-decoration: none;
         color: #007BFF;
-        font-size: 1.5em;
+        font-size: 1.5em; /* Increase font size for the title */
+        font-weight: bold; /* Make title bold */
     }
     .tutorial-details a:hover {
         text-decoration: underline;
     }
     .tutorial-details p {
-        margin: 5px 0 0; /* Add some spacing for the description */
-        font-size: 0.9em; /* Smaller font for the description */
+        margin: 10px 0 0; /* Add more spacing for the description */
+        font-size: 1.1em; /* Increase font size for the description */
     }
 </style>
