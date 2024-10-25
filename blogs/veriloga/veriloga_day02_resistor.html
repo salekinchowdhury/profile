@@ -50,22 +50,18 @@ endmodule
             <h2>Step 3: Simulation in Spectre (Terminal-Based)</h2>
             <p>Want to feel like a circuit magician? Time to summon Spectre. Terminal-based simulation is like driving stick shift—it’s not always necessary, but boy does it feel cool.</p>
             
-            <pre><code>simulator lang=spectre               // Specify Spectre as the simulator language
-
+            <pre><code>
+simulator lang=spectre               // Specify Spectre as the simulator language
 global 0                              // Define ground node
-
 V1 (p 0) vsource dc=5V               // Define a 5V DC voltage source between node 'p' and ground
 X1 (p 0) resistor R=1k               // Instantiate the Verilog-A resistor between 'p' and ground, with resistance of 1kΩ
-
 dcOp analysis1                       // Specify a DC operating point analysis
-
 save V(p) I(V1)                      // Save voltage at node 'p' and current through V1
-
 include "simple_resistor.va"                // Include the Verilog-A model for the resistor</code></pre>
             
-            <p>You’ve got your testbench. Now, to run the simulation:</p>
-            
-            <pre><code>spectre testbench.scs</code></pre>
+<p>You’ve got your testbench. Now, to run the simulation:</p>
+
+<pre><code>spectre testbench.scs</code></pre>
             
             <p>Check your results using <strong>WaveViewer</strong> (<code>wv</code>). This is the part where you feel like a wizard in front of a crystal ball, except you're looking at graphs of voltage and current. Seriously satisfying.</p>
         </section>
@@ -77,15 +73,10 @@ include "simple_resistor.va"                // Include the Verilog-A model for t
             <pre><code>* HSPICE Test Bench for Verilog-A Resistor Model
 
 .lib "simple_resistor.va" veriloga    * Include the Verilog-A resistor model file
-
 V1 p 0 DC 5V                  * Define a 5V DC voltage source between 'p' and ground (0)
-
 X1 p 0 resistor R=1k           * Instantiate the resistor between 'p' and ground, with R=1kΩ
-
 .op                            * Perform a DC operating point analysis
-
 .probe V(p) I(V1)              * Save the voltage at node 'p' and current through V1 for plotting
-
 .end                           * End the netlist</code></pre>
             
             <p>Now, to run the simulation:</p>
