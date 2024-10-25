@@ -51,14 +51,35 @@ endmodule
             <p>Want to feel like a circuit magician? Time to summon Spectre. Terminal-based simulation is like driving stick shift—it’s not always necessary, but boy does it feel cool.</p>
             
             <pre><code>
-simulator lang=spectre               // Specify Spectre as the simulator language
-global 0                             // Define ground node
-V1 (p 0) vsource dc=5V               // Define a 5V DC voltage source between node 'p' and ground
-X1 (p 0) resistor R=1k               // Instantiate the Verilog-A resistor between 'p' and ground, with resistance of 1kΩ
-dcOp analysis1                       // Specify a DC operating point analysis
-save V(p) I(V1)                      // Save voltage at node 'p' and current through V1
-include "simple_resistor.va"         // Include the Verilog-A model for the resistor
-            </code></pre>
+simulator lang=spectre // Sets the simulator language to Spectre
+global 0 // Defines global node '0' as ground
+                
+I0 (net1 0) simple_resistor R=1000 // Instantiates resistor I0 with resistance of 1000 ohms, connected between 'net1' and ground
+                                   // You can change the "R" value to any resistance value
+                                   // Remember this line? "parameter real R = 1k;" You made "R" a varible.
+                                   // Damn! This line makes more sense now
+V0 (net1 0) vsource dc=800.0m type=dc // Instantiates a DC voltage source V0 with 800 mV, connected between 'net1' and ground
+
+// (Start) Copy paste the bottom lines as it is for every spectre simulation
+simulatorOptions options psfversion="1.4.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 \
+    vthmod=vthcc ivthn=300e-9 ivthp=70e-9 ivthw=0 ivthl=0 maxnotes=5 \
+    maxwarns=5 digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf vdsatmod=gds 
+dcOp dc write="spectre.dc" maxiters=150 maxsteps=10000 annotate=status
+dcOpInfo info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+// (Stop) Copy paste the above lines as it is for every spectre simulation
+
+save I0:p   // Saves the current through the positive terminal of instance I0 (the resistor)
+saveOptions options save=allpub // Saves all public signals (voltages, currents) in the circuit
+ahdl_include "~/VerilogA_salekin/simple_resistor/veriloga/veriloga.va" // Includes the Verilog-A file for the simple resistor model
+</code></pre>
             
 <p>You’ve got your testbench. Now, to run the simulation:</p>
 
