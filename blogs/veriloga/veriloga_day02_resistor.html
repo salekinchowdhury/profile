@@ -29,7 +29,7 @@ title: "VerilogA Day 02: Writing Your First Verilog-A Model (With a Twist of Fun
             
             <p>Boom! You just wrote your first Verilog-A model! If you felt a spark of joy, that’s because you’re now officially speaking the language of analog design.</p>
             
-            <p><strong>Save the file as <code>resistor.va</code>.</strong> You’ll want to remember this filename like you remember your phone’s PIN—it’ll come in handy soon.</p>
+            <p><strong>Save the file as <code>simple_resistor.va</code>.</strong> You’ll want to remember this filename like you remember your phone’s PIN—it’ll come in handy soon.</p>
         </section>
 
         <section>
@@ -61,7 +61,7 @@ dcOp analysis1                       // Specify a DC operating point analysis
 
 save V(p) I(V1)                      // Save voltage at node 'p' and current through V1
 
-include "resistor.va"                // Include the Verilog-A model for the resistor</code></pre>
+include "simple_resistor.va"                // Include the Verilog-A model for the resistor</code></pre>
             
             <p>You’ve got your testbench. Now, to run the simulation:</p>
             
@@ -76,7 +76,7 @@ include "resistor.va"                // Include the Verilog-A model for the resi
             
             <pre><code>* HSPICE Test Bench for Verilog-A Resistor Model
 
-.lib "resistor.va" veriloga    * Include the Verilog-A resistor model file
+.lib "simple_resistor.va" veriloga    * Include the Verilog-A resistor model file
 
 V1 p 0 DC 5V                  * Define a 5V DC voltage source between 'p' and ground (0)
 
