@@ -12,19 +12,19 @@ title: "VerilogA Day 02: Writing Your First Verilog-A Model (With a Twist of Fun
             <p>Before you ask, "What's the big deal with a resistor?", think of it like that quiet friend who doesn’t say much but keeps everything chill at the party. Without it, circuits would just be chaotic noise, like a room full of toddlers after cake.</p>
             
             <pre><code>
-                `include "constants.vams" // Include Verilog-A libraries
-                `include "disciplines.vams" // Include fundamental constants
-                
-                module simple_resistor(p, n);
-                	inout p, n;               // Analog ports
-                	electrical p, n;           // Declare these ports as electrical signals
-                  
-                	parameter real R = 1k;     // Parameter for resistance value
-                
-                	analog begin
-                		V(p, n) <+ I(p, n) * R;  // Ohm's law: V = IR
-                	end
-                endmodule
+`include "constants.vams" // Include Verilog-A libraries
+`include "disciplines.vams" // Include fundamental constants
+
+module simple_resistor(p, n);
+    inout p, n;               // Analog ports
+    electrical p, n;           // Declare these ports as electrical signals
+  
+    parameter real R = 1k;     // Parameter for resistance value
+
+    analog begin
+        V(p, n) <+ I(p, n) * R;  // Ohm's law: V = IR
+    end
+endmodule
            </code></pre>
             
             <p>Boom! You just wrote your first Verilog-A model! If you felt a spark of joy, that’s because you’re now officially speaking the language of analog design.</p>
