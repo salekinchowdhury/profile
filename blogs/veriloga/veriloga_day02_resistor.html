@@ -98,14 +98,23 @@ ahdl_include "~/VerilogA_salekin/simple_resistor/veriloga/veriloga.va" // Includ
             <h2>Step 4: Simulation in HSPICE</h2>
             <p>No blog series on Verilog-A is complete without a little <strong>HSPICE</strong> action. It’s like bringing out the vintage vinyl—HSPICE has been around, and it knows its stuff.</p>
             
-            <pre><code>* HSPICE Test Bench for Verilog-A Resistor Model
-
-.lib "simple_resistor.va" veriloga    * Include the Verilog-A resistor model file
-V1 p 0 DC 5V                   * Define a 5V DC voltage source between 'p' and ground (0)
-X1 p 0 resistor R=1k           * Instantiate the resistor between 'p' and ground, with R=1kΩ
-.op                            * Perform a DC operating point analysis
-.probe V(p) I(V1)              * Save the voltage at node 'p' and current through V1 for plotting
-.end                           * End the netlist</code></pre>
+<pre><code>
+.PROBE DC               ; Set up to probe (measure) DC values in the circuit.
++    I(xi0:p)          ; Measure the current flowing through the port 'p' of the instance 'xi0'.
+.DC                     ; Start a DC sweep analysis.
+.TEMP 25                ; Set the temperature for the simulation to 25 degrees Celsius.
+.OPTION                 ; Define simulation options.
++    ivthn=300e-9      ; Set the threshold voltage for NMOS transistors to 300 mV.
++    ivthp=70e-9       ; Set the threshold voltage for PMOS transistors to 70 mV.
++    ARTIST=2          ; Specify the artist parameter for visual representation (simulation results).
++    INGOLD=2          ; Set the integration method to a specific type (method 2).
++    PARHIER=LOCAL     ; Use local parameter hierarchy for the simulation.
++    PSF=2             ; Set the precision for the state function to level 2.
+xi0 net1 0 simple_resistor R=1e3 ; Define an instance 'xi0' of a simple resistor connected between 'net1' and ground (0) with resistance of 1 kΩ.
+v0 net1 0 DC=800e-3    ; Define a DC voltage source 'v0' connected between 'net1' and ground (0) supplying 800 mV.
+.hdl "~/VerilogA_salekin/simple_resistor/veriloga/veriloga.va" ; Specify the path to the Verilog-A HDL file for the simple resistor model.
+.END                    ; End of the simulation description.                
+</code></pre>
 
             <p>Now, to run the simulation:</p>
             
