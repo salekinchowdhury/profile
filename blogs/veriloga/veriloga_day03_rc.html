@@ -9,13 +9,24 @@ title: "VerilogA Day 03: The Anatomy of a Verilog-A Module"
     <section>
         <p>Welcome back! Yesterday, we met the 'quiet friend' of circuits—a simple resistor in Verilog-A. Today, we’re diving a little deeper into the structure of a Verilog-A module, the “anatomy” that powers its functionality. Imagine it like understanding the framework behind a favorite recipe. Instead of focusing on ingredients alone, we're looking at the entire process.</p>
     </section>
+    
+    <h2>Understanding the Structure of a Module</h2>
+    
+    <p>A Verilog-A module typically includes several key elements:</p>
+    <ul>
+        <li><strong>Library Includes:</strong> Always start by including the necessary libraries to access fundamental constants and disciplines.</li>
+        <li><strong>Module Declaration:</strong> This is where you define the module name and its ports.</li>
+        <li><strong>Parameter Declaration:</strong> Use parameters to customize your model, just like adjusting the size of a wrench to fit different nuts and bolts.</li>
+        <li><strong>Analog Block:</strong> Here’s where the magic happens! You define the behavior of your module, similar to how you would decide which tool to use for a task.</li>
+    </ul>
 
+    
     <h2>Step 1: Crafting a Verilog-A Model for an RC Circuit</h2>
     <p>Let’s take our resistor knowledge and add a new ingredient: a capacitor. When you connect these two in series, you get an RC circuit that’s fantastic for smoothing signals. Here’s how it looks in code:</p>
 
     <pre><code>
-`include "disciplines.vams"     // Include the necessary libraries
-
+`include "constants.vams"   // Include Verilog-A libraries
+`include "disciplines.vams" // Include fundamental constants
 module rc_circuit(p, n);        // Declare module with two ports 'p' and 'n'
   inout p, n;                   // Define 'p' and 'n' as analog ports
   electrical p, n, mid;         // Declare nodes 'p', 'n', and 'mid' as electrical
