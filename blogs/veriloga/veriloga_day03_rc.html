@@ -25,8 +25,8 @@ title: "VerilogA Day 03: The Anatomy of a Verilog-A Module"
     <p>Let’s take our resistor knowledge and add a new ingredient: a capacitor. When you connect these two in series, you get an RC circuit that’s fantastic for smoothing signals. Here’s how it looks in code:</p>
 
     <pre><code>
-`include "constants.vams"   // Include Verilog-A libraries
 `include "disciplines.vams" // Include fundamental constants
+`include "constants.vams"   // Include Verilog-A libraries
 module rc_circuit(p, n);        // Declare module with two ports 'p' and 'n'
   inout p, n;                   // Define 'p' and 'n' as analog ports
   electrical p, n, mid;         // Declare nodes 'p', 'n', and 'mid' as electrical
