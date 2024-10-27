@@ -47,9 +47,13 @@ endmodule
     <p>Ready to bring it to life? Fire up <strong>ADE Explorer</strong> in Cadence Virtuoso:</p>
     <ol>
         <li>Create a new cell for <code>rc_circuit</code> and paste in your Verilog-A code.</li>
-        <li>Design a schematic with a DC voltage source connected to <code>p</code> and ground on <code>n</code>.</li>
-        <li>Open <strong>ADE Explorer</strong> and set up a transient analysis to observe the capacitor charging and discharging over time.</li>
-        <li>Plot the voltage across the capacitor and the circuit current in <strong>Virtuoso Visualization & Analysis XL</strong> after running the simulation.</li>
+        <li>Design a schematic with a "pulse voltage source" connected to <code>p</code> and ground on <code>n</code>. The circuit should look like this!</li>
+        <img src="https://raw.githubusercontent.com/salekinchowdhury/profile/master/files/veriloga/veriloga_day03_rc/RC_tb.png" alt="RC Schematic" style="width: 100%; max-width: 600px;">
+        <li>Open <strong>ADE Explorer</strong> and set up a transient analysis to observe the capacitor charging and discharging over time. Here is the maestro view from ADE Explorer.</li>
+        <img src="https://raw.githubusercontent.com/salekinchowdhury/profile/master/files/veriloga/veriloga_day03_rc/m_rc.png" alt="RC maestro" style="width: 100%; max-width: 600px;">
+        <li>Plot the voltage across the capacitor and the circuit current in <strong>Virtuoso Visualization & Analysis XL</strong> after running the simulation. You should see the capacitor voltage curve and current plot as expected. Considering the Resistance of 1 KΩ and capacitance of 1 nF, the output voltage should settle to almost the supply voltage (VDD) after 5τ (time constants). As you can see from the graph that at 5 µs, the capacitor voltage is almost equal to the VDD. Additionally, the capacitor voltage reaches to half of the VDD at 0.693τ! (Fun fact: Once in an interview, I was asked when the capacitor voltage reaches to half of VDD, I could not answer and as expected was not selected! Failure gives you a great lesson, isn't it?)</li>
+       <img src="https://raw.githubusercontent.com/salekinchowdhury/profile/master/files/veriloga/veriloga_day03_rc/1k1n_plots.png" alt="RC plot" style="width: 100%; max-width: 600px;">     
+ 
     </ol>
     <p>Watching the capacitor voltage rise and settle feels like observing a wave calm after the initial energy burst—a real-life view of electrical behavior.</p>
 
