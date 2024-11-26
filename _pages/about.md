@@ -27,3 +27,5 @@ redirect_from:
 
 🎯 Taking on challenges and fulfilling them isn't just work—it's an addiction that drives me forward.
 
+💬 “The expert at anything was once a beginner.” – Helen Hayes 
+
